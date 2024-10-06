@@ -18,6 +18,10 @@ public class Calc {
                 add(a, b);
                 break;
 
+            case "subtract":
+                subtract(a, b);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -27,6 +31,11 @@ public class Calc {
     }
     public static void add(int a, int b) {
         int sum = a + b;
+        System.out.println("The sum is: " + sum);
+    }
+
+    public static void subtract(int a, int b) {
+        int sum = a - b;
         System.out.println("The sum is: " + sum);
     }
 }
