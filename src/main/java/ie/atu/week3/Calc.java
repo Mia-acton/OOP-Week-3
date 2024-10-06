@@ -26,6 +26,10 @@ public class Calc {
                 multiply(a, b);
                 break;
 
+            case "divide":
+                divide(a, b);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 break;
@@ -46,5 +50,14 @@ public class Calc {
     public static void multiply(int a, int b) {
         int sum = a * b;
         System.out.println("The sum is: " + sum);
+    }
+
+    public static void divide(int a, int b) {
+        if (b == 0) {
+            System.out.println("WARNING! Dividing by 0 will result in a mathematical error.");
+        } else {
+            int sum = a / b;
+            System.out.println("The sum is: " + sum);
+        }
     }
 }
