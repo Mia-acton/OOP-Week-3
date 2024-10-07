@@ -30,10 +30,13 @@ public class Calc {
                 divide(a, b);
                 break;
 
+            case "exponential":
+                exponential(a, b);
+                break;
+
             default:
                 System.out.println("Invalid operation");
                 break;
-
         }
 
     }
@@ -59,5 +62,10 @@ public class Calc {
             int sum = a / b;
             System.out.println("The sum is: " + sum);
         }
+    }
+
+    public static void exponential(int a, int b) {
+        double sum = Math.pow(a, b);
+        System.out.println("The sum is: " + sum);
     }
 }
